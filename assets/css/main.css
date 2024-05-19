@@ -1,0 +1,36 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  h1 {
+    @apply text-5xl font-black;
+  }
+}
+
+/* @layer components {
+  .btn {
+    @apply whitespace-nowrap rounded-lg  px-5 py-3 text-base font-semibold leading-snug  transition duration-300 ease-in-out;
+    &.btn-sm {
+      @apply px-4 py-2 text-sm;
+    }
+  }
+  .btn-primary {
+    @apply bg-slate-950 text-white hover:bg-[#9886BC];
+    &.btn-outline {
+      @apply border-2 border-[#9886BC] bg-transparent text-[#9886BC] hover:bg-[#9886BC] hover:text-white;
+    }
+  }
+  .btn-secondary {
+    @apply bg-slate-950 text-white hover:bg-[#9886BC];
+    &.btn-outline {
+      @apply border-2 border-[#9886BC] bg-transparent text-[#9886BC] hover:bg-[#9886BC] hover:text-white;
+    }
+  }
+  .btn-tertiary {
+    @apply bg-slate-950 text-white hover:bg-[#9886BC];
+    &.btn-outline {
+      @apply border-2 border-[#9886BC] bg-transparent text-[#9886BC] hover:bg-[#9886BC] hover:text-white;
+    }
+  }
+} */

@@ -1,4 +1,4 @@
-# weHumans
+# wehumans
 
 ## Build Setup
 

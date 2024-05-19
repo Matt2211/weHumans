@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'weHumans',
+    title: 'wehumans',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -12,11 +12,23 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        src: "https://plausible.io/js/script.js",
+        'data-domain': 'wehumans.me',
+        defer: 'defer',
+        async: 'async',
+
+      }
+    ]
   },
+
+  devtools: { enabled: true },
+
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/scss/main.scss',
+    '~/assets/css/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -28,7 +40,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    //'@nuxtjs/eslint-module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -39,12 +51,22 @@ export default {
     '@nuxtjs/pwa',
     // https://google-fonts.nuxtjs.org
     ['@nuxtjs/google-fonts', {
-      Rubik: true,
-      // Rubik: { 
-      //   wght: [300, 400, 500, 600, 700, 800, 900],  
-      // },
+      families: {
+        Quicksand: true,
+      }
     }],
   ],
+
+  sitemap: {
+    //   Needs to be changed if the base URL ever changes. All routes are based off of this URL.
+    hostname: 'https://wehumans.me',
+    gzip: true,
+    defaults: {
+      changefreq: 'weekly',
+      priority: 1,
+      lastmod: new Date(),
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -59,6 +81,21 @@ export default {
     },
   },
 
+  generate: {
+    fallback: true,
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          'postcss-import': {},
+          'tailwindcss/nesting': {},
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
+  },
 }
