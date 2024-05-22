@@ -16,8 +16,8 @@
             We are like clouds, similar among us, but no one is identical to
             another.
           </h1>
-          <h2 class="text-we-blue-800 text-[18px]">
-            At weHumans, we are worrking to go beyond the ordinary. With our
+          <h2 class="text-we-blue-800 text-[16px] md:text-[18px]">
+            At weHumans, we are working to go beyond the ordinary. With our
             innovative platform, you can create your immortal digital self,
             ensuring your legacy lives on. Our AI technology learns about you,
             shaping a personalized experience. Get your digital tombstone and
@@ -35,6 +35,18 @@
 <script>
 import { gsap } from 'gsap'
 export default {
+  head: {
+    title: 'Crafting Digital Immortality: Preserve, Embrace, Shape Legacy',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Preserve your past, embrace your present, shape your future: Crafting your digital immortality with us.',
+      },
+    ],
+  },
+
   mounted() {
     //let loopTl = gsap.timeline({ repeat: -1, yoyo: true })
 
