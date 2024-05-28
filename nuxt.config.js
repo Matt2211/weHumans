@@ -7,11 +7,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'wehumans',
+    title: 'weHumans | Crafting Digital Immortality',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Preserve your past, embrace your present, shape your future: Crafting your digital immortality with us.' },
+      { 
+        hid: 'description', 
+        name: 'description', 
+        content: 'Preserve your past, embrace your present, shape your future: Crafting your digital immortality with us.' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -51,6 +54,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // https://sitemap.nuxtjs.org/guide/setup
+    '@nuxtjs/sitemap',
     // https://google-fonts.nuxtjs.org
     ['@nuxtjs/google-fonts', {
       families: {

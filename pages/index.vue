@@ -9,14 +9,16 @@
               width="200"
               height="50"
               alt="weHumans logo"
+              class="gsap-logo"
             />
           </div>
 
-          <h1 class="text-we-blue-600 text-3xl md:text-4xl lg:text-5xl">
+          <h1 class="text-3xl text-we-blue-600 md:text-4xl lg:text-5xl">
             We are like clouds, similar among us, but no one is identical to
             another.
           </h1>
-          <h2 class="text-we-blue-800 text-[16px] md:text-[18px]">
+
+          <h2 class="text-[16px] text-we-blue-800 md:text-[18px]">
             At weHumans, we are working to go beyond the ordinary. With our
             innovative platform, you can create your immortal digital self,
             ensuring your legacy lives on. Our AI technology learns about you,
