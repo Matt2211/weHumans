@@ -17,7 +17,7 @@ export default {
         content: 'Preserve your past, embrace your present, shape your future: Crafting your digital immortality with us.' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon-32x32.png' }],
     script: [
       {
         src: 'https://plausible.io/js/script.js',
